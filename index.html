@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>page registeration</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>FullName</label><label class="validation-error hide" id="fullnameValidationError"></label>
+                            <input type="text" name="fullname" id="fullname"/>
+                        </div>
+                        <div>
+                            <label>ID</label>
+                            <input type="text" name="id" id="id"/>
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="text" name="email" id="email"/>
+                        </div>
+                        <div>
+                            <label>Password</label>
+                            <input type="password" name="Password" id="password"/>
+                        </div>
+                        <div class="from-action-button">
+                            <input type="submit" value="Save"/>
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="valuelist">
+                <thead>
+                <tr>
+                    <th>FullName</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Password</th>
+
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                    </table>
+                </td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </table>
+<script src="script.js"></script>
+    </body>
+</html>
